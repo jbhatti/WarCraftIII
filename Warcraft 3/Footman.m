@@ -12,6 +12,7 @@
 
 -(instancetype)init{
     _healthPoints = 60;
+    _attackPower = 10;
     return self;
 }
 
