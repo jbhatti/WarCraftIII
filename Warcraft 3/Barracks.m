@@ -13,7 +13,16 @@
 -(instancetype)init{
     _gold = 1000;
     _food = 80;
+    
     return self;
+}
+
+-(Footman *)trainFootman {
+    _gold = self.gold - 135;
+    _food = self.food - 2;
+    Footman *newTrainFootman = [[Footman alloc] init];
+    return newTrainFootman;
+    
 }
 
 @end
