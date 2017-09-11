@@ -10,4 +10,7 @@
 
 @interface Barracks : NSObject
 
+@property (assign) int gold;
+@property (assign) int food;
+
 @end

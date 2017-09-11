@@ -10,4 +10,10 @@
 
 @implementation Barracks
 
+-(instancetype)init{
+    _gold = 1000;
+    _food = 80;
+    return self;
+}
+
 @end
