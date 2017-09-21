@@ -10,4 +10,19 @@
 
 @implementation Unit
 
+
+
+-(instancetype)initWithHP:(int)hp AP:(int)ap {
+    self = [super init];
+    if (self) {
+        hp = 30;
+        _healthPoints = hp;
+        
+        ap = 5;
+    }
+    return self;
+}
+
+
+
 @end
