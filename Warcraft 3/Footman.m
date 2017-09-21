@@ -19,7 +19,7 @@
 
 - (void)attack:(Unit *)enemy withDamage:(int)damage {
     damage = self.attackPower;
-    enemy.healthPoints = enemy.healthPoints - damage;
+    enemy.healthPoints = enemy.healthPoints - self.attackPower;
 }
 
 @end
