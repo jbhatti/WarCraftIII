@@ -10,7 +10,7 @@
 
 @interface Unit : NSObject
 
-@property (assign) int healthPoints;
+@property (nonatomic, assign) int healthPoints;
 @property (assign) int attackPower;
 
 
@@ -19,6 +19,11 @@
 
 - (void)setHealthPoints:(int)hp;
 
+- (int)healthPoints;
+
+- (void)damage:(int)damage;
+
+- (void)attack:(Unit *)enemy withDamage:(int)damage;
 
 
 @end

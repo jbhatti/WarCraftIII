@@ -7,6 +7,7 @@
 //
 
 #import "Footman.h"
+#import "Unit.h"
 
 @implementation Footman
 
@@ -14,6 +15,11 @@
     self.healthPoints = 60;
     self.attackPower = 10;
     return self;
+}
+
+- (void)attack:(Unit *)enemy withDamage:(int)damage {
+    damage = self.attackPower;
+    enemy.healthPoints = enemy.healthPoints - damage;
 }
 
 @end
