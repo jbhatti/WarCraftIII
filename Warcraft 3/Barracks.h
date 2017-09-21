@@ -16,6 +16,7 @@
 
 -(Footman *)trainFootman;
 
+- (BOOL)canTrainFootman;
 
 
 
