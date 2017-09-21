@@ -34,4 +34,20 @@
     }
 }
 
+-(Peasant *)trainPeasant {
+    if ([self canTrainPeasant]){
+    _gold = self.gold - 90;
+    _food = self.food - 5;
+    return [[Peasant alloc] init];
+    }
+    return nil;
+}
+
+- (BOOL)canTrainPeasant {
+    if (self.food < 5 || self.gold < 90) {
+        return NO;
+    } else {
+        return YES;
+    }
+}
 @end
